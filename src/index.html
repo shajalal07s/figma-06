@@ -5,8 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="relative lg:w-primary md:w-auto mx-auto py-10 bg-white">
+        <nav class="flex justify-between lg:justify-between md:justify-evenly items-center mx-auto px-4">
+            <div class="logo flex justify-center items-center">
+                <img src="../Figma-06-Img/Logo.png" class="" alt="">
+            </div>
+            <ul class="hidden lg:flex justify-center items-center lg:gap-16 md:gap-10 md:flex font-sans text-base">
+                <li><a href="#" class="text-black">Desitnations</a></li>
+                <li><a href="#" class="text-black hover:text-primary">Hotels</a></li>
+                <li><a href="#" class="text-black hover:text-primary">Flights</a></li>
+                <li><a href="#" class="text-black hover:text-primary">Bookings</a></li>
+                <li><a href="#" class="text-black hover:text-primary">Login</a></li>
+                <button class="border-2 px-4 h-[40px] border-black rounded">Sing up</button>
+                <li><a href="#" class="text-black">En <i class="fa-solid fa-chevron-down text-base"></i></a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-3xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu --> 
+    <div id="mobile-menu" class="hidden md:hidden lg:hidden absolute top-10 left-0 w-full h-[500px]
+         bg-black flex flex-col items-center justify-center space-y-8">
+        <a href="#" class="text-white hover:text-black">Home</a>
+        <a href="#" class="text-white hover:text-black">About</a>
+        <a href="#" class="text-white hover:text-black">Process</a>
+        <a href="#" class="text-white hover:text-black">Portfolio</a>
+        <a href="#" class="text-white hover:text-black">Blog</a>
+        <a href="#" class="text-white hover:text-black">Services</a>
+        <a href="#" class="text-white px-4 py-2 bg-footer rounded">Contact</a>
+    </div>
+
+    <script>
+        let menuBtn = document.getElementById('menu-btn');
+        let mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
     
+    <!-- Background Image -->
+    <!-- <img src="../Figma-06-Img/Hero and Hero Img-1.png" 
+    class="absolute top-0 right-0 inset-0  opacity-50" alt=""> -->
+     
+    <!-- Hero Section -->
+    
+    <section class="w-primary mx-auto">
+        <div class="hero-section flex justify-between items-center">
+            <!-- Hero Text -->
+           <div class="hero-text">
+               <p>Best Destinations around the world</p>
+               <p>Travel, enjoy <br>
+                  and live a new <br>
+                  and full life
+               </p>
+               <p>
+                  Built Wicket longer admire do barton vanity itself do in it. <br>
+                  Preferred to sportsmen it engrossed listening. <br>
+                  Park gate sell they west hard for the.
+               </p>
+                <div class="hero-bott">
+                   <button>Find out more</button>
+                   <div class="flex">
+                       <i class="fa-solid fa-play"></i>
+                       <p>Play Demo</p>
+                   </div>
+               </div>
+           </div>
+           <!-- Hero Image -->
+            <div class="hero-img">
+               <img src="../Figma-06-Img/hero-img-1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+
+
 </body>
 </html>
