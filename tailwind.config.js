@@ -12,10 +12,11 @@ module.exports = {
         'secendary': '55%'
       },
       textColor: {
-
+        'primary': '#5E6282'
       },
       fontSize : {
-        'text-7.5xl': '84px'
+        'text-7.5xl': '84px',
+        'text-4.5xl': '50px'
       },
       lineHeight : {
         
