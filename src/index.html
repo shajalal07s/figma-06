@@ -57,39 +57,76 @@
     <!-- <img src="../Figma-06-Img/Hero and Hero Img-1.png" 
     class="absolute top-0 right-0 inset-0  opacity-50" alt=""> -->
      
+
     <!-- Hero Section -->
     
-    <section class="w-primary mx-auto">
+    <section class="lg:w-primary md:w-auto mx-auto">
         <div class="hero-section flex justify-between items-center">
             <!-- Hero Text -->
-           <div class="hero-text">
-               <p>Best Destinations around the world</p>
-               <p>Travel, enjoy <br>
+           <div class="hero-text lg:w-secendary md:w-2/4 md:pl-4">
+               <p class="text-[#DF6951] lg:text-xl md:text-base font-Poppins font-bold uppercase">Best Destinations around the world</p>
+               <p class="font-Volkhov lg:text-7xl md:text-4xl tracking-normal font-bold mt-5">Travel, enjoy <br>
                   and live a new <br>
                   and full life
                </p>
-               <p>
+               <p class="text-base text-[#5E6282] mt-4">
                   Built Wicket longer admire do barton vanity itself do in it. <br>
                   Preferred to sportsmen it engrossed listening. <br>
                   Park gate sell they west hard for the.
                </p>
-                <div class="hero-bott">
-                   <button>Find out more</button>
-                   <div class="flex">
-                       <i class="fa-solid fa-play"></i>
-                       <p>Play Demo</p>
+                <div class="hero-bott flex gap-10 mt-8">
+                   <button class="px-5 py-3 rounded-lg bg-[#F1A501] shadow-lg  text-white font-sans">Find out more</button>
+                   <div class="flex justify-center items-center gap-6">
+                       <div class="flex justify-center items-center size-14 rounded-full bg-[#DF6951] shadow-lg"><i class="fa-solid fa-play 
+                           flex justify-center items-center bg-[#DF6951] text-white text-xl"></i>
+                       </div>
+                       <p class="text-lg text-[#686D77]">Play Demo</p>
                    </div>
                </div>
            </div>
            <!-- Hero Image -->
             <div class="hero-img">
-               <img src="../Figma-06-Img/hero-img-1.png" alt="">
+               <img src="../Figma-06-Img/hero-img-1.png" class="" alt="">
             </div>
         </div>
     </section>
 
-    
+    <!-- Service Section -->
 
+    <section class="w-primary mx-auto py-32 font-sans">
+        <img src="../Figma-06-Img/service-img-right.png" class="absolute right-20 bottom-0" alt="">
+        <div class="titel flex flex-col justify-center items-center">
+            <p class="text-lg font-Poppins">CATEGORY</p>
+            <p class="text-4xl font-bold font-Volkhov mt-4">We Offer Best Services</p>
+        </div>
+        <!-- Card -->
+        <div class="card mt-24 flex justify-center items-center gap-36">
+            <div class="card-1 flex flex-col justify-center items-center">
+                <img src="../Figma-06-Img/service-img-1.png" alt="">
+                <p class="text-xl font-semibold mt-4">Calculated Weather</p>
+                <p class="text-base font-Poppins text-[#959BAA] mt-4">Built Wicket longer <br> admire do barton <br>vanity itself do in it.</p>
+            </div>
+            <div class="card-2 relative flex flex-col px-12 py-2 shadow-lg rounded-3xl justify-center items-center">
+                <!-- <div>
+                    <img src="../Figma-06-Img/service-img-2-down.png" class="absolute left-2 top-56" alt="">
+                </div> -->
+                <img src="../Figma-06-Img/service-img-2.png" class="w-[137px] h-[100px]" alt="">
+                <p class="text-xl font-semibold mt-4 mb-5">Best Flights</p>
+                <p class="text-base font-Poppins text-[#959BAA] mb-5">Built Wicket longer <br> admire do barton <br>vanity itself do in it.</p>
+                
+            </div>
+            <div class="card-3 flex flex-col justify-center items-center">
+                <img src="../Figma-06-Img/service-img-3.png" alt="">
+                <p class="text-xl font-semibold mt-4">Local Events</p>
+                <p class="text-base font-Poppins text-[#959BAA] mt-4">Built Wicket longer <br> admire do barton <br>vanity itself do in it.</p>
+            </div>
+            <div class="card-4 flex flex-col justify-center items-center">
+                <img src="../Figma-06-Img/service-img-4.png" alt="">
+                <p class="text-xl font-semibold mt-4">Customization</p>
+                <p class="text-base font-Poppins text-[#959BAA] mt-4">Built Wicket longer <br> admire do barton <br>vanity itself do in it.</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
