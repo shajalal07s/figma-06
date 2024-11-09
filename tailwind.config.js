@@ -21,6 +21,9 @@ module.exports = {
       lineHeight : {
         
       },
+      backgroundImage : {
+        'hero-pattern': "url('../Figma-06-Img/Hero and Hero Img-1.png')"
+      },
       letterSpacing : {
         
       }
