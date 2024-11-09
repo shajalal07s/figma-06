@@ -10,7 +10,7 @@
 <body>
     <!-- Header Section -->
     <header class="relative lg:w-primary md:w-auto mx-auto py-10 bg-white">
-        <nav class="flex justify-between lg:justify-between md:justify-evenly items-center mx-auto px-4">
+        <nav class="flex justify-between lg:justify-between md:justify-between items-center mx-auto px-4">
             <div class="logo flex justify-center items-center">
                 <img src="../Figma-06-Img/Logo.png" class="" alt="">
             </div>
@@ -32,7 +32,7 @@
     </header>
 
     <!-- Mobile Menu --> 
-    <div id="mobile-menu" class="hidden md:hidden lg:hidden absolute top-10 left-0 w-full h-[500px]
+    <div id="mobile-menu" class="hidden md:hidden lg:hidden absolute top-20 left-0 w-full h-[500px]
          bg-black flex flex-col items-center justify-center space-y-8">
         <a href="#" class="text-white hover:text-black">Home</a>
         <a href="#" class="text-white hover:text-black">About</a>
@@ -60,22 +60,26 @@
     <!-- Hero Section -->
     
     <section class="lg:w-primary md:w-auto mx-auto">
-        <div class="hero-section flex justify-between items-center">
+        <div class="hero-section flex flex-col gap-10 lg:gap-0 md:gap-0 lg:flex-row md:flex-row lg:justify-between md:justify-evenly items-center">
+             <!-- Hero Image -->
+             <div class="hero-img">
+                <img src="../Figma-06-Img/hero-img-1.png" class="block lg:hidden md:hidden" alt="">
+             </div>
             <!-- Hero Text -->
-           <div class="hero-text lg:w-secendary md:w-2/4 md:pl-4">
-               <p class="text-[#DF6951] lg:text-xl md:text-base font-Poppins font-bold uppercase">Best Destinations around the world</p>
-               <p class="font-Volkhov lg:text-7xl md:text-4xl tracking-normal font-bold mt-5">Travel, enjoy <br>
+           <div class="hero-text lg:w-secendary md:w-auto md:pl-4">
+               <p class="text-[#DF6951] text-center lg:text-left md:text-left lg:text-xl md:text-base font-Poppins font-bold uppercase">Best Destinations around the world</p>
+               <p class="font-Volkhov text-center lg:text-left md:text-left text-5xl lg:text-7xl md:text-4xl tracking-normal font-bold mt-5">Travel, enjoy <br>
                   and live a new <br>
                   and full life
                </p>
-               <p class="text-base text-[#5E6282] mt-4">
+               <p class="text-base text-center lg:text-left md:text-left text-[#5E6282] mt-4">
                   Built Wicket longer admire do barton vanity itself do in it. <br>
                   Preferred to sportsmen it engrossed listening. <br>
                   Park gate sell they west hard for the.
                </p>
-                <div class="hero-bott flex gap-10 mt-8">
+                <div class="hero-bott flex gap-10 lg:gap-10 md:gap-2 mt-8 ml-10 lg:ml-0 md:ml-0">
                    <button class="px-5 py-3 rounded-lg bg-[#F1A501] shadow-lg  text-white font-sans">Find out more</button>
-                   <div class="flex justify-center items-center gap-6">
+                   <div class="flex justify-center items-center lg:gap-6 md:gap-3">
                        <div class="flex justify-center items-center size-14 rounded-full bg-[#DF6951] shadow-lg"><i class="fa-solid fa-play 
                            flex justify-center items-center bg-[#DF6951] text-white text-xl"></i>
                        </div>
@@ -85,27 +89,27 @@
            </div>
            <!-- Hero Image -->
             <div class="hero-img">
-               <img src="../Figma-06-Img/hero-img-1.png" class="" alt="">
+               <img src="../Figma-06-Img/hero-img-1.png" class="hidden md:block lg:block" alt="">
             </div>
         </div>
     </section>
 
     <!-- Service Section -->
 
-    <section class="w-primary mx-auto py-32 font-sans">
-        <img src="../Figma-06-Img/service-img-right.png" class="absolute right-20 bottom-0" alt="">
+    <section class="relative lg:w-primary md:w-auto lg:p-0 md:p-5 mx-auto py-20 lg:py-32 font-sans">
+        <img src="../Figma-06-Img/service-img-right.png" class="hidden lg:block md:block absolute -right-10" alt="">
         <div class="titel flex flex-col justify-center items-center">
             <p class="text-lg font-Poppins">CATEGORY</p>
             <p class="text-4xl font-bold font-Volkhov mt-4">We Offer Best Services</p>
         </div>
         <!-- Card -->
-        <div class="card mt-24 flex justify-center items-center gap-36">
+        <div class="card mt-24 flex flex-col lg:flex-row md:flex-row gap-5 justify-center items-center lg:gap-36 md:gap-10">
             <div class="card-1 flex flex-col justify-center items-center">
                 <img src="../Figma-06-Img/service-img-1.png" alt="">
                 <p class="text-xl font-semibold mt-4">Calculated Weather</p>
                 <p class="text-base font-Poppins text-[#959BAA] mt-4">Built Wicket longer <br> admire do barton <br>vanity itself do in it.</p>
             </div>
-            <div class="card-2 relative flex flex-col px-12 py-2 shadow-lg rounded-3xl justify-center items-center">
+            <div class="card-2 relative flex flex-col lg:px-12 lg:py-2 lg:shadow-lg lg:rounded-3xl justify-center items-center">
                 <!-- <div>
                     <img src="../Figma-06-Img/service-img-2-down.png" class="absolute left-2 top-56" alt="">
                 </div> -->
@@ -129,13 +133,13 @@
     
     <!-- Selling Section -->
 
-    <section class="w-primary mx-auto py-14">
+    <section class="lg:w-primary md:w-auto mx-auto py-14">
         <div class="selling-titel">
             <p class="text-lg text-center text-[#5E6282] font-semibold">Top Selling</p>
             <p class="text-4xl text-center font-Volkhov font-bold mt-2">Top Destinations</p>
         </div>
         <!-- Selling-Card -->
-        <div class="selling-card flex justify-center items-center gap-10 mt-16">
+        <div class="selling-card flex flex-col lg:flex-row md:flex-row gap-5 justify-center items-center lg:gap-10 md:gap-5 mt-16 md:p-5 lg:p-0">
             <!-- Card-1 -->
             <div class="card-1 rounded-xl shadow-xl w-[315px]">
                 <div class="s-card-img-1">
@@ -189,7 +193,8 @@
     
     <!-- Booking-Section -->
 
-    <section class="relative w-primary mx-auto py-32 font-Poppins flex justify-between items-center">
+    <section class="relative lg:w-primary md:w-auto md:gap- mx-auto py-32 font-Poppins flex flex-col gap-5 lg:gap-0 md:gap-0 lg:flex-row md:flex-row 
+        lg:justify-between md:justify-evenly items-center">
         <div class="booking-section px-10">
             <p class="text-lg text-[#5E6282]">Easy and Fast</p>
             <p class="font-Volkhov text-4xl font-bold mt-4">Book your next trip <br>
@@ -238,7 +243,7 @@
 
         <!-- Booking-Card -->
         
-        <div class="card p-5 rounded-xl shadow-lg mr-36">
+        <div class="card p-5 rounded-xl shadow-lg lg:mr-36 md:mr-36">
             <img src="../Figma-06-Img/booking-section-img-1.jpg" class="w-[321px] h-[161px] rounded-xl" alt="">
             <div class="">
                 <p class="text-lg mt-4">Trip To Greece</p>
@@ -249,7 +254,8 @@
 
             
         </div>
-        <div class="card-2 absolute top-96 right-10 p-4 rounded-xl bg-white shadow-xl flex gap-4">
+        <div class="card-2 flex absolute top-96 right-10
+              p-4  rounded-xl bg-white shadow-xl gap-4">
             <img src="../Figma-06-Img/booking-section-img-2.png" class="rounded-full size-12" alt="">
             <div>
                 <p class="text-sm text-[#84829A]">Ongoing</p>
@@ -261,10 +267,11 @@
 
     <!-- Testimonials Section -->
 
-    <section class="w-primary mx-auto flex justify-center items-center gap-52 py-20 font-Poppins">
+    <section class="lg:w-primary md:w-auto mx-auto flex flex-col lg:flex-row md:flex-row lg:justify-center md:justify-evenly 
+        items-center gap-10 lg:gap-52 md:gap-0 md:p-4 py-20 font-Poppins">
         <div class="testimonials-section-text">
-            <p class="uppercase text-primary text-lg">Testimonials</p>
-            <p class="text-text-4.5xl font-Volkhov font-bold mt-3">What people say <br>
+            <p class="uppercase text-primary text-lg text-center lg:text-left md:text-left">Testimonials</p>
+            <p class="text-text-4.5xl text-center lg:text-left md:text-left font-Volkhov font-bold mt-3">What people say <br>
                 about Us.
             </p>
             <div class="flex gap-4 mt-20">
@@ -273,7 +280,7 @@
                 <div class="size-3 rounded-full bg-slate-200"></div>
             </div>
         </div>
-        <div class="testimon-card-1 relative">
+        <div class="testimon-card-1">
             <img src="../Figma-06-Img/Testimonials-sec-img.png" class="size-16 rounded-full" alt="">
             <div class="card-text relative p-6 bg-white rounded-lg ml-10 shadow-lg">
                 <p class="text-base text-primary">
@@ -293,19 +300,19 @@
 
     <!-- Logo Section -->
 
-    <section class="w-primary mx-auto mt-10">
+    <section class="lg:w-primary md:w-auto mx-auto lg:mt-10 md:mt-10">
         <img src="../Figma-06-Img/Testimon-sect-logo.png" class="px-10" alt="">
     </section>
 
     <!-- Contact Us Section -->
 
-    <section class="relative w-primary mx-auto py-14">
+    <section class="relative lg:w-primary md:w-auto h-auto p-6 md:p-6 mx-auto lg:py-14 md:py-14">
         <div class="relative cont-text-btn flex flex-col justify-center items-center h-[409px] rounded-3xl rounded-tl-[125px] bg-[#DFD7F9]">
-            <p class="text-4xl font-Poppins font-semibold text-center text-primary">Subscribe to get information, latest news and other <br>
+            <p class="lg:text-4xl md:text-3xl font-Poppins font-semibold text-center text-primary">Subscribe to get information, latest news and other <br>
                 interesting offers about Jadoo
             </p>
             <div class="flex gap-8 mt-10">
-                <input class="w-[421px] h-[68px] bg-white indent-10 rounded-lg" type="gmail" placeholder="Your email">
+                <input class="lg:w-[421px] md:w-[421px] lg:h-[68px] md:h-[68px] bg-white indent-10 rounded-lg" type="gmail" placeholder="Your email">
                 <button class="px-10 py-1 bg-[#FF946D] text-white text-lg rounded-lg">Subscribe</button>
             </div>
         </div>
@@ -320,17 +327,18 @@
                 <img src="../Figma-06-Img/cont-img-right.png" class="absolute bottom-1 -left-20" alt="">
             </div>
             <div class="img-down">
-                <img src="../Figma-06-Img/cont-img-botton.png" class="absolute -bottom-20 -right-24" alt="">
+                <img src="../Figma-06-Img/cont-img-botton.png" class="hidden md:block lg:block absolute -bottom-20 -right-24" alt="">
             </div>
         </div>
     </section>
 
     <!-- Footer section -->
 
-    <footer class="w-primary mx-auto py-20 font-Poppins">
-        <div class="fot-sec flex justify-between">
+    <footer class="lg:w-primary md:w-auto  md:p-5 mx-auto py-10 lg:py-20 md:py-20 font-Poppins">
+        <div class="fot-sec flex flex-col lg:flex-row md:flex-row 
+            gap-5 lg:gap-0 md:gap-0 justify-between items-center text-center lg:text-left md:text-left">
             <div class="log-text">
-                <img src="../Figma-06-Img/Logo.png" alt="">
+                <img src="../Figma-06-Img/Logo.png" class="ml-10 lg:ml-0 md:ml-0" alt="">
                 <p class="text-sm mt-10 text-primary">
                     Book your trip in minute, get full <br>
                     Control for much longer.
