@@ -8,108 +8,105 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section class="bg-hero-pattern w-auto h-auto">
-        <!-- Hero Section -->
-        <header class="relative lg:w-primary md:w-auto mx-auto py-10 bg-white">
-            <nav class="flex justify-between lg:justify-between md:justify-between items-center mx-auto px-4">
-                <div class="logo flex justify-center items-center">
-                    <img src="../Figma-06-Img/Logo.png" class="" alt="">
-                </div>
-                <ul class="hidden lg:flex justify-center items-center lg:gap-16 md:gap-10 md:flex font-sans text-base">
-                    <li><a href="#" class="text-black">Desitnations</a></li>
-                    <li><a href="#" class="text-black hover:text-primary">Hotels</a></li>
-                    <li><a href="#" class="text-black hover:text-primary">Flights</a></li>
-                    <li><a href="#" class="text-black hover:text-primary">Bookings</a></li>
-                    <li><a href="#" class="text-black hover:text-primary">Login</a></li>
-                    <button class="border-2 px-4 h-[40px] border-black rounded">Sing up</button>
-                    <li><a href="#" class="text-black">En <i class="fa-solid fa-chevron-down text-base"></i></a></li>
-                </ul>
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-3xl">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </nav>
-        </header>
-        <!-- Mobile Menu --> 
-        <div id="mobile-menu" class="hidden md:hidden lg:hidden absolute top-20 left-0 w-full h-[500px]
-         bg-black flex flex-col items-center justify-center space-y-8">
-           <a href="#" class="text-white hover:text-black">Home</a>
-           <a href="#" class="text-white hover:text-black">About</a>
-           <a href="#" class="text-white hover:text-black">Process</a>
-           <a href="#" class="text-white hover:text-black">Portfolio</a>
-           <a href="#" class="text-white hover:text-black">Blog</a>
-           <a href="#" class="text-white hover:text-black">Services</a>
-           <a href="#" class="text-white px-4 py-2 bg-footer rounded">Contact</a>
-        </div>
-
-
-        <script>
-            let menuBtn = document.getElementById('menu-btn');
-            let mobileMenu = document.getElementById('mobile-menu');
-    
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        </script>
-        
-
-         <!-- Hero Section -->
-        <section class="lg:w-primary md:w-auto mx-auto">
-            <div class="hero-section flex flex-col gap-10 lg:gap-0 md:gap-0 lg:flex-row md:flex-row lg:justify-between md:justify-evenly items-center">
-             <!-- Hero Image -->
-              <div class="hero-img">
-                <img src="../Figma-06-Img/hero-img-1.png" class="block lg:hidden md:hidden" alt="">
-              </div>
-            <!-- Hero Text -->
-                <div class="hero-text lg:w-secendary md:w-auto md:pl-4">
-                   <p class="text-[#DF6951] text-center lg:text-left md:text-left lg:text-xl md:text-base font-Poppins font-bold uppercase">Best Destinations around the world</p>
-                   <p class="font-Volkhov text-center lg:text-left md:text-left text-5xl lg:text-7xl md:text-4xl tracking-normal font-bold mt-5">Travel, enjoy <br>
-                     and live a new <br>
-                     and full life
-                    </p>
-                   <p class="text-base text-center lg:text-left md:text-left text-[#5E6282] mt-4">
-                      Built Wicket longer admire do barton vanity itself do in it. <br>
-                      Preferred to sportsmen it engrossed listening. <br>
-                      Park gate sell they west hard for the.
-                   </p>
-                   <div class="hero-bott flex gap-10 lg:gap-10 md:gap-2 mt-8 ml-10 lg:ml-0 md:ml-0">
-                       <button class="px-5 py-3 rounded-lg bg-[#F1A501] shadow-lg  text-white font-sans">Find out more</button>
-                       <div class="flex justify-center items-center lg:gap-6 md:gap-3">
-                           <div class="flex justify-center items-center size-14 rounded-full bg-[#DF6951] shadow-lg"><i class="fa-solid fa-play 
-                              flex justify-center items-center bg-[#DF6951] text-white text-xl"></i>
-                            </div>
-                            <p class="text-lg text-[#686D77]">Play Demo</p>
-                        </div>
-                   </div>
-                </div>
-                <!-- Hero Image -->
-                <div class="hero-img">
-                  <img src="../Figma-06-Img/hero-img-1.png" class="hidden md:block lg:block" alt="">
-                </div>
+    <!-- Heading Section -->
+    <header class="relative z-0 lg:w-primary md:w-auto mx-auto py-10">
+        <nav class="flex justify-between lg:justify-between md:justify-between items-center mx-auto px-4">
+            <div class="logo flex justify-center items-center">
+                <img src="../Figma-06-Img/Logo.png" class="" alt="">
             </div>
-       </section>
+            <ul class="hidden lg:flex justify-center items-center lg:gap-16 md:gap-10 md:flex font-sans text-base">
+                <li><a href="#" class="text-black">Desitnations</a></li>
+                <li><a href="#" class="text-black hover:text-primary">Hotels</a></li>
+                <li><a href="#" class="text-black hover:text-primary">Flights</a></li>
+                <li><a href="#" class="text-black hover:text-primary">Bookings</a></li>
+                <li><a href="#" class="text-black hover:text-primary">Login</a></li>
+                <button class="border-2 px-4 h-[40px] border-black rounded">Sing up</button>
+                <li><a href="#" class="text-black">En <i class="fa-solid fa-chevron-down text-base"></i></a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-3xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Menu --> 
+    <div id="mobile-menu" class="hidden md:hidden lg:hidden absolute top-20 left-0 w-full h-[500px]
+     bg-black flex flex-col items-center justify-center space-y-8">
+       <a href="#" class="text-white hover:text-black">Home</a>
+       <a href="#" class="text-white hover:text-black">About</a>
+       <a href="#" class="text-white hover:text-black">Process</a>
+       <a href="#" class="text-white hover:text-black">Portfolio</a>
+       <a href="#" class="text-white hover:text-black">Blog</a>
+       <a href="#" class="text-white hover:text-black">Services</a>
+       <a href="#" class="text-white px-4 py-2 bg-footer rounded">Contact</a>
+    </div>
 
-    </section>
-    <!-- Header Section -->
-    
 
-    
+    <script>
+        let menuBtn = document.getElementById('menu-btn');
+        let mobileMenu = document.getElementById('mobile-menu');
 
-   
-    
-    <!-- Background Image -->
-    <!-- <img src="../Figma-06-Img/Hero and Hero Img-1.png" 
-    class="absolute top-0 right-0 inset-0  opacity-50" alt=""> -->
-     
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <!-- Hero Section -->
-    
-    
 
+    <section class="relative z-10 lg:w-primary md:w-auto mx-auto">
+        <div class="hero-section flex flex-col gap-10 lg:gap-0 md:gap-0 lg:flex-row md:flex-row 
+          lg:justify-between md:justify-evenly items-center">
+         <!-- Hero Image -->
+          <div class="hero-img">
+            <img src="../Figma-06-Img/hero-img-1.png" class="block lg:hidden md:hidden" alt="">
+          </div>
+        <!-- Hero Text -->
+            <div class="hero-text lg:w-secendary md:w-auto md:pl-4">
+               <p class="text-[#DF6951] text-center lg:text-left md:text-left lg:text-xl md:text-base font-Poppins font-bold uppercase">Best Destinations around the world</p>
+               <p class="font-Volkhov text-center lg:text-left md:text-left text-5xl lg:text-7xl md:text-4xl tracking-normal font-bold mt-5">Travel, enjoy <br>
+                 and live a new <br>
+                 and full life
+                </p>
+               <p class="text-base text-center lg:text-left md:text-left text-[#5E6282] mt-4">
+                  Built Wicket longer admire do barton vanity itself do in it. <br>
+                  Preferred to sportsmen it engrossed listening. <br>
+                  Park gate sell they west hard for the.
+               </p>
+               <div class="hero-bott flex gap-10 lg:gap-10 md:gap-2 mt-8 ml-10 lg:ml-0 md:ml-0">
+                   <button class="px-5 py-3 rounded-lg bg-[#F1A501] shadow-lg  text-white font-sans">Find out more</button>
+                   <div class="flex justify-center items-center lg:gap-6 md:gap-3">
+                       <div class="flex justify-center items-center size-14 rounded-full bg-[#DF6951] shadow-lg"><i class="fa-solid fa-play 
+                          flex justify-center items-center bg-[#DF6951] text-white text-xl"></i>
+                        </div>
+                        <p class="text-lg text-[#686D77]">Play Demo</p>
+                    </div>
+               </div>
+            </div>
+            <!-- Hero Image -->
+            
+            <div class="plan-img">
+                <img src="../Figma-06-Img/plane-hero.png" class="absolute top-7 ml-14" alt="">
+            </div>
+
+            <div class="plan-img">
+                <img src="../Figma-06-Img/plane-hero.png" class="absolute top-20 -right-8 -z-20" alt="">
+            </div>
+
+            <div class="hero-img">
+              <img src="../Figma-06-Img/hero-img-1.png" class="hidden md:block lg:block" alt="">
+            </div>
+        </div>
+   </section>
+
+    <!-- Background Image -->
+
+    <img src="../Figma-06-Img/Hero and Hero Img-1.png" 
+    class="absolute top-0 right-1 -z-20" alt=""> 
+     
     <!-- Service Section -->
 
-    <section class="relative lg:w-primary md:w-auto lg:p-0 md:p-5 mx-auto py-20 lg:py-32 font-sans">
+    <section class="relative lg:w-primary md:w-auto lg:p-0 md:p-5 mx-auto py-20 md:py-32 lg:py-32 font-sans">
         <img src="../Figma-06-Img/service-img-right.png" class="hidden lg:block md:block absolute -right-10" alt="">
         <div class="titel flex flex-col justify-center items-center">
             <p class="text-lg font-Poppins">CATEGORY</p>
